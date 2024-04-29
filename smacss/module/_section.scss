@@ -1,0 +1,34 @@
+
+.TitleMain {
+    font-size: 4rem; 
+    padding: 10px; 
+    margin: 20px; 
+}
+
+.Pokemones{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 30px;
+    padding: 30px;
+    &-images{
+        border: 6px solid $color-third;
+        border-radius: 20px;
+    }
+}
+.Pokemon--box{animation: pulse 2s infinite;}
+@keyframes pulse {
+    0%, 5% {transform: scale(1); }
+    2% {transform: scale(1,2);}
+}
+
+.Pokemon-title {
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+}
+.Pokemon-description {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}

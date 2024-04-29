@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100%;
+  background-color: rgb(39, 39, 39);
+  color: rgb(225, 225, 225);
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Header .Title {
+  margin: 20px;
+}
+
+.NavMain {
+  width: 500px;
+}
+.NavMain-list {
+  border: 3px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+.NavMain-list .NavMain-link {
+  text-decoration: none;
+  padding: 10px;
+  color: red;
+}
+
+.NavMain-link--target {
+  border: 2px solid rgb(13, 135, 77);
+  border-radius: 5px;
+  align-items: center;
+}
+
+.Main {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TitleMain {
+  font-size: 4rem;
+  padding: 10px;
+  margin: 20px;
+}
+
+.Pokemones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+}
+.Pokemones-images {
+  border: 6px solid rgb(13, 135, 77);
+  border-radius: 20px;
+}
+
+.Pokemon--box {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 5% {
+    transform: scale(1);
+  }
+  2% {
+    transform: scale(1, 2);
+  }
+}
+.Pokemon-title {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Pokemon-description {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
